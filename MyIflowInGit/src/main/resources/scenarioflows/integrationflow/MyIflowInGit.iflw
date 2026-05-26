@@ -172,194 +172,6 @@
                 </ifl:property>
             </bpmn2:extensionElements>
         </bpmn2:messageFlow>
-        <bpmn2:messageFlow id="MessageFlow_24" name="AS4" sourceRef="EndEvent_2" targetRef="Participant_2">
-            <bpmn2:extensionElements>
-                <ifl:property>
-                    <key>pullReceiptTargetURL</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>Description</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>signMessage</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>verifyMessage</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentNS</key>
-                    <value>sap</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>samlAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pullReceiptPrivateKeyAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>decryptMessage</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pullReceiptSignatureAlgorithm</key>
-                    <value>sha256rsa</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>usernameTokenAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pullReceiptSigningOption</key>
-                    <value>notRequired</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>timeout</key>
-                    <value>300</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>Name</key>
-                    <value>AS4</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>responseUsernameTokenAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>TransportProtocolVersion</key>
-                    <value>1.6.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentSWCVName</key>
-                    <value>external</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>receiptUsernameTokenOption</key>
-                    <value>none</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>endpointUrl</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pullReceiptTimeout</key>
-                    <value>300</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>samlEndpoint</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>usernameTokenOption</key>
-                    <value>none</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>signAlgorithm</key>
-                    <value>sha256rsa</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>MessageProtocol</key>
-                    <value>ebMS3 Pull</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentSWCVId</key>
-                    <value>1.6.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>direction</key>
-                    <value>Receiver</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>mpc</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>ComponentType</key>
-                    <value>AS4</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>decryptAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>authPrivateKeyAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pullReceiptAuthPrivateKeyAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>signAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pullReceiptOption</key>
-                    <value>notRequired</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>messageId</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>Vendor</key>
-                    <value>SAP</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.5</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>receiptUsernameTokenAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>system</key>
-                    <value>Receiver</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>pullReceiptAuthenticationType</key>
-                    <value>basic</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>verifyUsernameToken</key>
-                    <value>notRequired</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>TransportProtocol</key>
-                    <value>HTTPS</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>authenticationType</key>
-                    <value>saml</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::AdapterVariant/cname::AS4/vendor::SAP/tp::HTTPS/mp::ebMS3 Pull/direction::Receiver/version::1.5.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>credentialName</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>verificationAlias</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>pullReceiptCredentialName</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>MessageProtocolVersion</key>
-                    <value>1.6.0</value>
-                </ifl:property>
-            </bpmn2:extensionElements>
-        </bpmn2:messageFlow>
     </bpmn2:collaboration>
     <bpmn2:process id="Process_15" name="Local Integration Process 1">
         <bpmn2:extensionElements>
@@ -442,7 +254,7 @@
                     <value>ctype::FlowstepVariant/cname::MessageEndEvent/version::1.1.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_22</bpmn2:incoming>
+            <bpmn2:incoming>SequenceFlow_5</bpmn2:incoming>
             <bpmn2:messageEventDefinition/>
         </bpmn2:endEvent>
         <bpmn2:callActivity id="CallActivity_4" name="Content Modifier 1">
@@ -479,40 +291,6 @@
             <bpmn2:incoming>SequenceFlow_3</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_5</bpmn2:outgoing>
         </bpmn2:callActivity>
-        <bpmn2:callActivity id="CallActivity_21" name="Content Modifier 2">
-            <bpmn2:extensionElements>
-                <ifl:property>
-                    <key>bodyType</key>
-                    <value>constant</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>propertyTable</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>headerTable</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>wrapContent</key>
-                    <value/>
-                </ifl:property>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.6</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>activityType</key>
-                    <value>Enricher</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::FlowstepVariant/cname::Enricher/version::1.6.3</value>
-                </ifl:property>
-            </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_20</bpmn2:incoming>
-            <bpmn2:outgoing>SequenceFlow_22</bpmn2:outgoing>
-        </bpmn2:callActivity>
         <bpmn2:startEvent id="StartEvent_2" name="Start">
             <bpmn2:extensionElements>
                 <ifl:property>
@@ -527,36 +305,8 @@
             <bpmn2:outgoing>SequenceFlow_3</bpmn2:outgoing>
             <bpmn2:messageEventDefinition/>
         </bpmn2:startEvent>
-        <bpmn2:callActivity id="CallActivity_19" name="Process Call 1">
-            <bpmn2:extensionElements>
-                <ifl:property>
-                    <key>processId</key>
-                    <value>Process_15</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>componentVersion</key>
-                    <value>1.0</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>activityType</key>
-                    <value>ProcessCallElement</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>cmdVariantUri</key>
-                    <value>ctype::FlowstepVariant/cname::NonLoopingProcess/version::1.0.4</value>
-                </ifl:property>
-                <ifl:property>
-                    <key>subActivityType</key>
-                    <value>NonLoopingProcess</value>
-                </ifl:property>
-            </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_5</bpmn2:incoming>
-            <bpmn2:outgoing>SequenceFlow_20</bpmn2:outgoing>
-        </bpmn2:callActivity>
-        <bpmn2:sequenceFlow id="SequenceFlow_5" sourceRef="CallActivity_4" targetRef="CallActivity_19"/>
-        <bpmn2:sequenceFlow id="SequenceFlow_22" sourceRef="CallActivity_21" targetRef="EndEvent_2"/>
+        <bpmn2:sequenceFlow id="SequenceFlow_5" sourceRef="CallActivity_4" targetRef="EndEvent_2"/>
         <bpmn2:sequenceFlow id="SequenceFlow_3" sourceRef="StartEvent_2" targetRef="CallActivity_4"/>
-        <bpmn2:sequenceFlow id="SequenceFlow_20" sourceRef="CallActivity_19" targetRef="CallActivity_21"/>
     </bpmn2:process>
     <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="Default Collaboration Diagram">
         <bpmndi:BPMNPlane bpmnElement="Collaboration_1" id="BPMNPlane_1">
@@ -581,49 +331,27 @@
             <bpmndi:BPMNShape bpmnElement="Participant_1" id="BPMNShape_Participant_1">
                 <dc:Bounds height="140.0" width="100.0" x="40.0" y="100.0"/>
             </bpmndi:BPMNShape>
-            <bpmndi:BPMNShape bpmnElement="CallActivity_19" id="BPMNShape_CallActivity_19">
-                <dc:Bounds height="60.0" width="100.0" x="514.0" y="128.0"/>
-            </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="Participant_Process_15" id="BPMNShape_Participant_Process_15">
                 <dc:Bounds height="220.0" width="548.0" x="284.0" y="379.0"/>
             </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="Participant_Process_1" id="BPMNShape_Participant_Process_1">
                 <dc:Bounds height="270.0" width="569.0" x="250.0" y="60.0"/>
             </bpmndi:BPMNShape>
-            <bpmndi:BPMNShape bpmnElement="CallActivity_21" id="BPMNShape_CallActivity_21">
-                <dc:Bounds height="60.0" width="100.0" x="615.0" y="233.0"/>
-            </bpmndi:BPMNShape>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_18" id="BPMNEdge_SequenceFlow_18" sourceElement="BPMNShape_StartEvent_16" targetElement="BPMNShape_EndEvent_17">
                 <di:waypoint x="345.0" xsi:type="dc:Point" y="468.0"/>
                 <di:waypoint x="732.0" xsi:type="dc:Point" y="468.0"/>
             </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_5" id="BPMNEdge_SequenceFlow_5" sourceElement="BPMNShape_CallActivity_4" targetElement="BPMNShape_CallActivity_19">
+            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_5" id="BPMNEdge_SequenceFlow_5" sourceElement="BPMNShape_CallActivity_4" targetElement="BPMNShape_EndEvent_2">
                 <di:waypoint x="417.0" xsi:type="dc:Point" y="158.0"/>
-                <di:waypoint x="564.0" xsi:type="dc:Point" y="158.0"/>
+                <di:waypoint x="719.0" xsi:type="dc:Point" y="158.0"/>
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_3" id="BPMNEdge_SequenceFlow_3" sourceElement="BPMNShape_StartEvent_2" targetElement="BPMNShape_CallActivity_4">
                 <di:waypoint x="308.0" xsi:type="dc:Point" y="158.0"/>
                 <di:waypoint x="417.0" xsi:type="dc:Point" y="158.0"/>
             </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_20" id="BPMNEdge_SequenceFlow_20" sourceElement="BPMNShape_CallActivity_19" targetElement="BPMNShape_CallActivity_21">
-                <di:waypoint x="564.0" xsi:type="dc:Point" y="158.0"/>
-                <di:waypoint x="564.0" xsi:type="dc:Point" y="210.5"/>
-                <di:waypoint x="665.0" xsi:type="dc:Point" y="210.5"/>
-                <di:waypoint x="665.0" xsi:type="dc:Point" y="263.0"/>
-            </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="MessageFlow_14" id="BPMNEdge_MessageFlow_14" sourceElement="BPMNShape_Participant_1" targetElement="BPMNShape_StartEvent_2">
                 <di:waypoint x="90.0" xsi:type="dc:Point" y="170.0"/>
                 <di:waypoint x="308.0" xsi:type="dc:Point" y="158.0"/>
-            </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_22" id="BPMNEdge_SequenceFlow_22" sourceElement="BPMNShape_CallActivity_21" targetElement="BPMNShape_EndEvent_2">
-                <di:waypoint x="665.0" xsi:type="dc:Point" y="263.0"/>
-                <di:waypoint x="665.0" xsi:type="dc:Point" y="203.5"/>
-                <di:waypoint x="719.0" xsi:type="dc:Point" y="203.5"/>
-                <di:waypoint x="719.0" xsi:type="dc:Point" y="158.0"/>
-            </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="MessageFlow_24" id="BPMNEdge_MessageFlow_24" sourceElement="BPMNShape_EndEvent_2" targetElement="BPMNShape_Participant_2">
-                <di:waypoint x="719.0" xsi:type="dc:Point" y="158.0"/>
-                <di:waypoint x="950.0" xsi:type="dc:Point" y="170.0"/>
             </bpmndi:BPMNEdge>
         </bpmndi:BPMNPlane>
     </bpmndi:BPMNDiagram>
