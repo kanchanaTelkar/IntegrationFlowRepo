@@ -7,7 +7,7 @@ import com.sap.gateway.ip.core.customdev.util.Message;
 
 def Message processData(Message message) {
 
-    message.setBody("Hello");
+    message.setBody("Hello from remote");
     /*To set or modify the body, you can use the following methods.
     def body = message.getBody();
     message.setBody(body + " Body is modified");
