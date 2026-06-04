@@ -215,7 +215,7 @@
                 </ifl:property>
                 <ifl:property>
                     <key>headerTable</key>
-                    <value>&lt;row&gt;&lt;cell id='Action'&gt;Create&lt;/cell&gt;&lt;cell id='Type'&gt;constant&lt;/cell&gt;&lt;cell id='Value'&gt;HeaderValue&lt;/cell&gt;&lt;cell id='Default'&gt;&lt;/cell&gt;&lt;cell id='Name'&gt;HeaderKey&lt;/cell&gt;&lt;cell id='Datatype'&gt;&lt;/cell&gt;&lt;/row&gt;</value>
+                    <value>&lt;row&gt;&lt;cell id='Action'&gt;Create&lt;/cell&gt;&lt;cell id='Type'&gt;constant&lt;/cell&gt;&lt;cell id='Value'&gt;RemoteHeaderValue&lt;/cell&gt;&lt;cell id='Default'&gt;&lt;/cell&gt;&lt;cell id='Name'&gt;RemoteHeaderKey&lt;/cell&gt;&lt;cell id='Datatype'&gt;&lt;/cell&gt;&lt;/row&gt;</value>
                 </ifl:property>
                 <ifl:property>
                     <key>wrapContent</key>
@@ -237,7 +237,7 @@
             <bpmn2:incoming>SequenceFlow_3</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_5</bpmn2:outgoing>
         </bpmn2:callActivity>
-        <bpmn2:callActivity id="CallActivity_21" name="EDI to XML Converter 1">
+        <bpmn2:callActivity id="CallActivity_21" name="EDI to XML Converter 1Remote">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>edifactSourceEncoding</key>
@@ -337,7 +337,7 @@
                 </ifl:property>
                 <ifl:property>
                     <key>edifactHeaderName</key>
-                    <value>HeaderNameInEDI</value>
+                    <value>RemoteHeaderNameInEDI</value>
                 </ifl:property>
                 <ifl:property>
                     <key>edifactDecimalCharacter</key>
