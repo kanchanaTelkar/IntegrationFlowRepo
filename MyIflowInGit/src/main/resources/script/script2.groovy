@@ -9,8 +9,7 @@ import com.sap.gateway.ip.core.customdev.util.Message;
 
 def Message processData(Message message) {
 
-    message.setBody(body + " Body is modified in REMOTE");
-      message.setBody(body + " NEW LINE ADDED in REMOTE");
+    message.setBody(body + " Body is modified in BASE");
     /*To set or modify the body, you can use the following methods.
     def body = message.getBody();
     message.setBody(body + " Body is modified");
