@@ -20,14 +20,6 @@ def Message processData(Message message) {
     def value = headers.get("oldHeader");
     message.setHeader("oldHeaderRRRR", value + " modified");
     message.setHeader("newHeaderRRRRR", "newHeader");
-
-    //To set or modify the properties, you can use the following methods.
-    def properties = message.getProperties();
-    value = properties.get("oldProperty");
-    message.setProperty("oldProperty", value + " modified");
-    //message.setProperty("newProperty", "newProperty");
-
- message.setHeader("newHeader", "newHeader");
  
     return message;
 }
