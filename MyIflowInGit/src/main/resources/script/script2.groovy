@@ -18,7 +18,10 @@ def Message processData(Message message) {
     //To set or modify the headers, you can use the following methods.
     def headers = message.getHeaders();
     def value = headers.get("oldHeader");
-    message.setHeader("oldHeaderRRRR", value + " modified");
+    message.setHeader("oldHeaderREMOTE", value + " modified");
+    message.setHeader("newHeaderRRRRR", "newHeader");
+
+    message.setHeader("REMOTEREMOTENEW", value + " modified");
     message.setHeader("newHeaderRRRRR", "newHeader");
  
     return message;
