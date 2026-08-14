@@ -11,6 +11,7 @@ def Message processData(Message message) {
 
     message.setBody(body + " Body is modified in BASE");
     message.setBody(body + " Body2 set in REMOTE");
+    message.setBody(body + " Body2 set in normal editor in CV");
     //To set or modify the body, you can use the following methods.
     def body = message.getBody();
     message.setBody(body + " Body is modified");
