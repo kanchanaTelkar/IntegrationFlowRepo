@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><parameters>
-  <parameter>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><parameters><parameter>
     <key/>
     <name>value</name>
     <type>xsd:string</type>
@@ -7,5 +6,4 @@
     <constraint/>
     <description/>
     <additionalMetadata/>
-  </parameter>
-</parameters>
+  </parameter><param_references/></parameters>
