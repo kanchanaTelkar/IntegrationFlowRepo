@@ -11,13 +11,16 @@ def Message processData(Message message) {
 
     //To set or modify the body, you can use the following methods.
     def body = message.getBody();
-    message.setBody(body + " Body is modified in BASE CS2");
+    message.setBody(body + " Body is modified in REMOTE CS2");
 
     //To set or modify the headers, you can use the following methods.
     def headers = message.getHeaders();
     def value = headers.get("oldHeader");
-    message.setHeader("BASE_Conflicting_Script2_oldHeader", value + " modified");
-    message.setHeader("BASE_Conflicting_Script2_newHeader", "newHeader");
+    message.setHeader("REMOTE_Conflicting_Script2_oldHeader", value + " modified");
+    message.setHeader("REMOTE_Conflicting_Script2_newHeader", "newHeader");
+    
+     message.setHeader("newlinesInRemote", value + " modified");
+    message.setHeader("newlinesInRemote22", "newHeader");
 
     return message;
 }
