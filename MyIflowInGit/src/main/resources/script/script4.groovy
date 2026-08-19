@@ -11,7 +11,7 @@ def Message processData(Message message) {
 
     //To set or modify the body, you can use the following methods.
     def body = message.getBody();
-    message.setBody(body + " Body is modified BASE CS2");
+    message.setBody(body + " REMOTE Body is modified BASE CS2");
 
     //To set or modify the headers, you can use the following methods.
     def headers = message.getHeaders();
@@ -22,8 +22,10 @@ def Message processData(Message message) {
     //To set or modify the properties, you can use the following methods.
     def properties = message.getProperties();
     value = properties.get("oldProperty");
-    message.setProperty("BASECS2oldProperty", value + " modified");
-    message.setProperty("BASECS2newProperty", "newProperty"); 
+    message.setProperty("REMOTECS2oldProperty", value + " modified");
+    message.setProperty("REMOTEnewProperty", "newProperty"); 
+
+message.setProperty("NEW LINES  IN  REMOTE", "newProperty"); 
 
     return message;
 }
