@@ -9,9 +9,10 @@ import com.sap.gateway.ip.core.customdev.util.Message;
 
 def Message processData(Message message) {
 
-    //To set or modify the body, you can use the following methods.
+  def body = "REMOTE ONLY SCRIPT"
+    /*To set or modify the body, you can use the following methods.
     def body = message.getBody();
-    message.setBody(body + " NEW STEP added by remote");
+    message.setBody(body + " Body is modified");
 
     //To set or modify the headers, you can use the following methods.
     def headers = message.getHeaders();
@@ -23,7 +24,7 @@ def Message processData(Message message) {
     def properties = message.getProperties();
     value = properties.get("oldProperty");
     message.setProperty("oldProperty", value + " modified");
-    message.setProperty("newProperty", "newProperty"); 
+    message.setProperty("newProperty", "newProperty"); */
 
     return message;
 }
