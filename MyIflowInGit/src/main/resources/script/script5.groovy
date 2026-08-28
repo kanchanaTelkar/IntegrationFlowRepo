@@ -9,9 +9,10 @@ import com.sap.gateway.ip.core.customdev.util.Message;
 
 def Message processData(Message message) {
 
-    //To set or modify the body, you can use the following methods.
+  message.setBody(body + " REMOTE is modified");
+    /*To set or modify the body, you can use the following methods.
     def body = message.getBody();
-    message.setBody(body + " Body is modified REMOTE CS2");
+    message.setBody(body + " Body is modified");
 
     //To set or modify the headers, you can use the following methods.
     def headers = message.getHeaders();
@@ -22,8 +23,8 @@ def Message processData(Message message) {
     //To set or modify the properties, you can use the following methods.
     def properties = message.getProperties();
     value = properties.get("oldProperty");
-    message.setProperty("REMOTECS2oldProperty", value + " modified");
-    message.setProperty("REMOTECS2newProperty", "newProperty"); 
+    message.setProperty("oldProperty", value + " modified");
+    message.setProperty("newProperty", "newProperty"); */
 
     return message;
 }
