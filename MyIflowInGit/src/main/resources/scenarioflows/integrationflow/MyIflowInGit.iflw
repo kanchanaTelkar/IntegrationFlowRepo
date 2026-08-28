@@ -561,7 +561,7 @@
             <bpmn2:incoming>SequenceFlow_31</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_24</bpmn2:outgoing>
         </bpmn2:callActivity>
-        <bpmn2:callActivity id="CallActivity_21" name="EDI to XML Converter 1Remote1">
+        <bpmn2:callActivity id="CallActivity_21" name="BASE EDI to XML Converter">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>edifactSourceEncoding</key>
