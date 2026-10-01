@@ -393,7 +393,7 @@
                 </ifl:property>
                 <ifl:property>
                     <key>wrapContent</key>
-                    <value>//baseXpath</value>
+                    <value>//RemoteXpath</value>
                 </ifl:property>
                 <ifl:property>
                     <key>componentVersion</key>
@@ -408,7 +408,7 @@
                     <value>ctype::FlowstepVariant/cname::Filter/version::1.1.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_22</bpmn2:incoming>
+            <bpmn2:incoming>SequenceFlow_49</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_31</bpmn2:outgoing>
         </bpmn2:callActivity>
         <bpmn2:callActivity id="CallActivity_28" name="ConflitingScript 1">
@@ -577,7 +577,7 @@
                 </ifl:property>
                 <ifl:property>
                     <key>headerTable</key>
-                    <value>&lt;row&gt;&lt;cell id='Action'&gt;Create&lt;/cell&gt;&lt;cell id='Type'&gt;constant&lt;/cell&gt;&lt;cell id='Value'&gt;UnchangedValue&lt;/cell&gt;&lt;cell id='Default'&gt;&lt;/cell&gt;&lt;cell id='Name'&gt;UnchangedKey&lt;/cell&gt;&lt;cell id='Datatype'&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell id='Action'&gt;Create&lt;/cell&gt;&lt;cell id='Type'&gt;constant&lt;/cell&gt;&lt;cell id='Value'&gt;BASEValue&lt;/cell&gt;&lt;cell id='Default'&gt;&lt;/cell&gt;&lt;cell id='Name'&gt;BASEKey&lt;/cell&gt;&lt;cell id='Datatype'&gt;&lt;/cell&gt;&lt;/row&gt;</value>
+                    <value>&lt;row&gt;&lt;cell id='Action'&gt;Create&lt;/cell&gt;&lt;cell id='Type'&gt;constant&lt;/cell&gt;&lt;cell id='Value'&gt;UnchangedValue&lt;/cell&gt;&lt;cell id='Default'&gt;&lt;/cell&gt;&lt;cell id='Name'&gt;UnchangedKey&lt;/cell&gt;&lt;cell id='Datatype'&gt;&lt;/cell&gt;&lt;/row&gt;&lt;row&gt;&lt;cell id='Action'&gt;Create&lt;/cell&gt;&lt;cell id='Type'&gt;constant&lt;/cell&gt;&lt;cell id='Value'&gt;RemoteValue&lt;/cell&gt;&lt;cell id='Default'&gt;&lt;/cell&gt;&lt;cell id='Name'&gt;RemoteKey&lt;/cell&gt;&lt;cell id='Datatype'&gt;&lt;/cell&gt;&lt;/row&gt;</value>
                 </ifl:property>
                 <ifl:property>
                     <key>wrapContent</key>
@@ -672,10 +672,10 @@
                     <value>ctype::FlowstepVariant/cname::Enricher/version::1.7.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_37</bpmn2:incoming>
+            <bpmn2:incoming>SequenceFlow_35</bpmn2:incoming>
             <bpmn2:outgoing>SequenceFlow_39</bpmn2:outgoing>
         </bpmn2:callActivity>
-        <bpmn2:callActivity id="CallActivity_36" name="FlowstepToDeletedByRemote">
+        <bpmn2:callActivity id="CallActivity_46" name="NewFlowStepAddedInREMOTE">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>bodyType</key>
@@ -687,7 +687,7 @@
                 </ifl:property>
                 <ifl:property>
                     <key>headerTable</key>
-                    <value>&lt;row&gt;&lt;cell id='Action'&gt;Create&lt;/cell&gt;&lt;cell id='Type'&gt;constant&lt;/cell&gt;&lt;cell id='Value'&gt;test&lt;/cell&gt;&lt;cell id='Default'&gt;&lt;/cell&gt;&lt;cell id='Name'&gt;test&lt;/cell&gt;&lt;cell id='Datatype'&gt;&lt;/cell&gt;&lt;/row&gt;</value>
+                    <value/>
                 </ifl:property>
                 <ifl:property>
                     <key>contextVariableTable</key>
@@ -710,10 +710,10 @@
                     <value>ctype::FlowstepVariant/cname::Enricher/version::1.7.0</value>
                 </ifl:property>
             </bpmn2:extensionElements>
-            <bpmn2:incoming>SequenceFlow_35</bpmn2:incoming>
-            <bpmn2:outgoing>SequenceFlow_37</bpmn2:outgoing>
+            <bpmn2:incoming>SequenceFlow_22</bpmn2:incoming>
+            <bpmn2:outgoing>SequenceFlow_49</bpmn2:outgoing>
         </bpmn2:callActivity>
-        <bpmn2:callActivity id="CallActivity_21" name="BASE EDI to XML Converter">
+        <bpmn2:callActivity id="CallActivity_21" name="remote EDI to XML Converter">
             <bpmn2:extensionElements>
                 <ifl:property>
                     <key>edifactSourceEncoding</key>
@@ -859,14 +859,14 @@
         </bpmn2:startEvent>
         <bpmn2:sequenceFlow id="SequenceFlow_31" sourceRef="CallActivity_30" targetRef="CallActivity_23"/>
         <bpmn2:sequenceFlow id="SequenceFlow_29" sourceRef="CallActivity_28" targetRef="CallActivity_32"/>
-        <bpmn2:sequenceFlow id="SequenceFlow_35" sourceRef="CallActivity_34" targetRef="CallActivity_36"/>
+        <bpmn2:sequenceFlow id="SequenceFlow_35" sourceRef="CallActivity_34" targetRef="CallActivity_38"/>
         <bpmn2:sequenceFlow id="SequenceFlow_33" sourceRef="CallActivity_32" targetRef="CallActivity_34"/>
         <bpmn2:sequenceFlow id="SequenceFlow_42" sourceRef="CallActivity_41" targetRef="CallActivity_44"/>
         <bpmn2:sequenceFlow id="SequenceFlow_24" sourceRef="CallActivity_23" targetRef="CallActivity_28"/>
         <bpmn2:sequenceFlow id="SequenceFlow_45" sourceRef="CallActivity_44" targetRef="EndEvent_2"/>
         <bpmn2:sequenceFlow id="SequenceFlow_39" sourceRef="CallActivity_38" targetRef="CallActivity_41"/>
-        <bpmn2:sequenceFlow id="SequenceFlow_37" sourceRef="CallActivity_36" targetRef="CallActivity_38"/>
-        <bpmn2:sequenceFlow id="SequenceFlow_22" sourceRef="CallActivity_21" targetRef="CallActivity_30"/>
+        <bpmn2:sequenceFlow id="SequenceFlow_49" sourceRef="CallActivity_46" targetRef="CallActivity_30"/>
+        <bpmn2:sequenceFlow id="SequenceFlow_22" sourceRef="CallActivity_21" targetRef="CallActivity_46"/>
         <bpmn2:sequenceFlow id="SequenceFlow_3" sourceRef="StartEvent_2" targetRef="CallActivity_21"/>
     </bpmn2:process>
     <bpmndi:BPMNDiagram id="BPMNDiagram_1" name="Default Collaboration Diagram">
@@ -898,9 +898,6 @@
             <bpmndi:BPMNShape bpmnElement="Participant_1" id="BPMNShape_Participant_1">
                 <dc:Bounds height="140.0" width="100.0" x="74.0" y="173.0"/>
             </bpmndi:BPMNShape>
-            <bpmndi:BPMNShape bpmnElement="CallActivity_36" id="BPMNShape_CallActivity_36">
-                <dc:Bounds height="60.0" width="100.0" x="1394.0" y="213.0"/>
-            </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="CallActivity_38" id="BPMNShape_CallActivity_38">
                 <dc:Bounds height="60.0" width="100.0" x="1554.0" y="213.0"/>
             </bpmndi:BPMNShape>
@@ -914,11 +911,16 @@
                 <dc:Bounds height="32.0" width="32.0" x="326.0" y="227.0"/>
             </bpmndi:BPMNShape>
             <bpmndi:BPMNShape bpmnElement="Participant_Process_1" id="BPMNShape_Participant_Process_1">
-                <dc:Bounds height="160.0" width="1860.0" x="274.0" y="163.0"/>
+                <dc:Bounds height="210.0" width="1860.0" x="274.0" y="163.0"/>
             </bpmndi:BPMNShape>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_22" id="BPMNEdge_SequenceFlow_22" sourceElement="BPMNShape_CallActivity_21" targetElement="BPMNShape_CallActivity_30">
-                <di:waypoint x="534.0" xsi:type="dc:Point" y="243.0"/>
-                <di:waypoint x="594.0" xsi:type="dc:Point" y="243.0"/>
+            <bpmndi:BPMNShape bpmnElement="CallActivity_46" id="BPMNShape_CallActivity_46">
+                <dc:Bounds height="60.0" width="100.0" x="556.0" y="293.0"/>
+            </bpmndi:BPMNShape>
+            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_22" id="BPMNEdge_SequenceFlow_22" sourceElement="BPMNShape_CallActivity_21" targetElement="BPMNShape_CallActivity_46">
+                <di:waypoint x="484.0" xsi:type="dc:Point" y="243.0"/>
+                <di:waypoint x="484.0" xsi:type="dc:Point" y="283.0"/>
+                <di:waypoint x="560.0" xsi:type="dc:Point" y="283.0"/>
+                <di:waypoint x="560.0" xsi:type="dc:Point" y="323.0"/>
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_33" id="BPMNEdge_SequenceFlow_33" sourceElement="BPMNShape_CallActivity_32" targetElement="BPMNShape_CallActivity_34">
                 <di:waypoint x="1174.0" xsi:type="dc:Point" y="243.0"/>
@@ -932,9 +934,9 @@
                 <di:waypoint x="854.0" xsi:type="dc:Point" y="243.0"/>
                 <di:waypoint x="914.0" xsi:type="dc:Point" y="243.0"/>
             </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_35" id="BPMNEdge_SequenceFlow_35" sourceElement="BPMNShape_CallActivity_34" targetElement="BPMNShape_CallActivity_36">
-                <di:waypoint x="1334.0" xsi:type="dc:Point" y="243.0"/>
-                <di:waypoint x="1394.0" xsi:type="dc:Point" y="243.0"/>
+            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_35" id="BPMNEdge_SequenceFlow_35" sourceElement="BPMNShape_CallActivity_34" targetElement="BPMNShape_CallActivity_38">
+                <di:waypoint x="1284.0" xsi:type="dc:Point" y="243.0"/>
+                <di:waypoint x="1604.0" xsi:type="dc:Point" y="243.0"/>
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_42" id="BPMNEdge_SequenceFlow_42" sourceElement="BPMNShape_CallActivity_41" targetElement="BPMNShape_CallActivity_44">
                 <di:waypoint x="1814.0" xsi:type="dc:Point" y="243.0"/>
@@ -947,10 +949,6 @@
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_29" id="BPMNEdge_SequenceFlow_29" sourceElement="BPMNShape_CallActivity_28" targetElement="BPMNShape_CallActivity_32">
                 <di:waypoint x="1014.0" xsi:type="dc:Point" y="243.0"/>
                 <di:waypoint x="1074.0" xsi:type="dc:Point" y="243.0"/>
-            </bpmndi:BPMNEdge>
-            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_37" id="BPMNEdge_SequenceFlow_37" sourceElement="BPMNShape_CallActivity_36" targetElement="BPMNShape_CallActivity_38">
-                <di:waypoint x="1494.0" xsi:type="dc:Point" y="243.0"/>
-                <di:waypoint x="1554.0" xsi:type="dc:Point" y="243.0"/>
             </bpmndi:BPMNEdge>
             <bpmndi:BPMNEdge bpmnElement="SequenceFlow_39" id="BPMNEdge_SequenceFlow_39" sourceElement="BPMNShape_CallActivity_38" targetElement="BPMNShape_CallActivity_41">
                 <di:waypoint x="1654.0" xsi:type="dc:Point" y="243.0"/>
@@ -967,6 +965,13 @@
             <bpmndi:BPMNEdge bpmnElement="MessageFlow_25" id="BPMNEdge_MessageFlow_25" sourceElement="BPMNShape_EndEvent_2" targetElement="BPMNShape_Participant_2">
                 <di:waypoint x="2066.0" xsi:type="dc:Point" y="243.0"/>
                 <di:waypoint x="2284.0" xsi:type="dc:Point" y="243.0"/>
+            </bpmndi:BPMNEdge>
+            <bpmndi:BPMNEdge bpmnElement="SequenceFlow_49" id="BPMNEdge_SequenceFlow_49" sourceElement="BPMNShape_CallActivity_46" targetElement="BPMNShape_CallActivity_30">
+                <di:waypoint x="606.0" xsi:type="dc:Point" y="323.0"/>
+                <di:waypoint x="606.0" xsi:type="dc:Point" y="283.0"/>
+                <di:waypoint x="544.0" xsi:type="dc:Point" y="283.0"/>
+                <di:waypoint x="544.0" xsi:type="dc:Point" y="259.0"/>
+                <di:waypoint x="594.5" xsi:type="dc:Point" y="259.0"/>
             </bpmndi:BPMNEdge>
         </bpmndi:BPMNPlane>
     </bpmndi:BPMNDiagram>

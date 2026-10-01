@@ -9,8 +9,8 @@ import com.sap.gateway.ip.core.customdev.util.Message;
 
 def Message processData(Message message) {
 
-    message.setBody(body + " Body is modified in BASE");
-    message.setBody(body + " Body2 set in BASE");
+    message.setBody(body + " Body is modified in REMOTE");
+    message.setBody(body + " Body2 set in REMOTE");
     //To set or modify the body, you can use the following methods.
     def body = message.getBody();
     message.setBody(body + " Body is modified");
@@ -24,8 +24,8 @@ def Message processData(Message message) {
     message.setHeader("BASECODE2", value + " modified");
     message.setHeader("BASECODE2", "newHeader");
     
-    message.setHeader("oldHeaderBASE2", value + " modified");
-    message.setHeader("newHeaderBASE2", "newHeader");
+    message.setHeader("oldHeaderREMOTE2", value + " modified");
+    message.setHeader("newHeaderREMOTE2", "newHeader");
  
     return message;
 }
